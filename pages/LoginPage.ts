@@ -13,7 +13,6 @@ export class LoginPage {
     await this.page.getByRole('button', { name: 'Next' }).click();
     await this.page.getByRole('textbox', { name: 'Password' }).fill(password);
     await this.page.getByRole('button', { name: 'Verify' }).click();
-    await this.page.getByRole('textbox', { name: 'Merchant Permalink' }).fill(permalink);
-    await this.page.getByRole('button', { name: 'Continue' }).click();
+  
   }
 }
